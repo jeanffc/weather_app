@@ -1,7 +1,8 @@
+import 'dart:convert';
+import 'dart:async';
+
 import 'package:meta/meta.dart';
 import 'package:http/http.dart' as http;
-
-import 'dart:convert';
 
 import 'package:weather_app/models/models.dart';
 
@@ -9,9 +10,7 @@ class WeatherApiClient {
   static const baseUrl = 'https://www.metaweather.com';
   final http.Client httpClient;
 
-  WeatherApiClient({
-    @required this.httpClient,
-  }) : assert(httpClient != null);
+  WeatherApiClient({@required this.httpClient}) : assert(httpClient != null);
 
   Future<int> getLocationId(String city) async {
     final locationUrl = '$baseUrl/api/location/search/?query=$city';

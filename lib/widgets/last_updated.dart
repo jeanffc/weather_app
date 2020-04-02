@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:meta/meta.dart';
+
 class LastUpdated extends StatelessWidget {
   final DateTime dateTime;
 
