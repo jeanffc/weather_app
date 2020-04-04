@@ -1,11 +1,11 @@
 import 'dart:async';
+import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
-import 'package:flutter_bloc/flutter_bloc.dart';
-
-import 'package:weather_app/widgets/widgets.dart';
 import 'package:weather_app/blocs/blocs.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:weather_app/widgets/widgets.dart';
 
 class Weather extends StatefulWidget {
   @override
